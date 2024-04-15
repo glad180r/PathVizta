@@ -1,0 +1,37 @@
+.world-grid-container {
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+
+}
+
+
+.world-grid{
+  display: grid;
+}
+
+.grid-item{
+  border: solid 0.1px lightblue;
+  height: 30px;
+  width: 30px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  background-color: var(--world-grid-color);
+}
+
+.start-cell-icon,
+.goal-cell-icon{
+  fill: var(--grid-icons-color); /*Change to var(--dark-blue) in light mode*/
+  height: 30px;
+  width: 30px;
+}
+

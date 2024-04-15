@@ -1,0 +1,80 @@
+header {
+  background-color: var(--header-color);
+  color: var(--header-text-color);
+  height: var(--header-height);
+
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.app-title {
+  font-size: 1.20rem;
+  font-weight: bold;
+  margin-right: 20%;
+}
+
+.control-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 43px;
+}
+
+
+
+.control-inputs>button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--header-text-color);
+  font-size: 0.90rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  height: calc(var(--header-height) - 10px);
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+
+#pathvizta-btn {
+  background-color: var(--yellow);
+  width: 125px;
+}
+
+
+#toggle-theme-btn {
+  background-color: var(--body-color);
+  color: var(--body-text-color);
+}
+
+
+#toggle-theme-btn:active,
+#pathvizta-btn:active {
+  background-color: var(--dark-blue);
+}
+
+
+
+@media only screen and (max-width:1600px) {
+  header {
+    width: 100vw;
+  }
+
+  #toggle-theme-btn {
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

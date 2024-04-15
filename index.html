@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/index.css">
+  <script type="module" src="./scripts/main.js" defer></script>
+  <title>PathVizta</title>
+</head>
+<body class="App">
+  <header>
+    <span class="app-title" id="app-title">PathVizta</span>
+
+    <div class="control-inputs">
+      <select name="algo-selector" id="algo-selector">
+        <option value="" disabled selected hidden>Algorithm</option> <!--Setting placeholder but hiding it to make it an unselectable option-->
+        <option value="dijkstra">Dijkstra's</option>
+        <option value="a-star">A*</option>
+      </select>
+
+
+      <select name="maze-selector" id="maze-selector">
+        <option value="" disabled selected hidden>Mazes & Patterns</option> <!--Setting placeholder but hiding it to make it an unselectable option-->
+        <option value="">None</option>
+        <option value="simple-stair-pattern">Simple Stair Pattern</option>
+        <option value="basic-random-maze">Basic Random Maze</option>
+        <option value="recursive-division" disabled>Recursive Division</option>
+      </select>
+
+      <select name="visualization-speed-selector" id="visualization-speed-selector">
+        <option value="" disabled selected hidden>Visualization Speed</option> <!--Setting placeholder but hiding it to make it an unselectable option-->
+        <option value="fast">Fast Speed</option>
+        <option value="medium">Medium Speed</option>
+        <option value="slow">Slow Speed</option>
+      </select>
+      
+      <button id="visualize-btn">Visualize</button>
+      <button id="compare-algos-btn">Compare Algorithms</button>
+      <button id="reset-world-grid-btn">Reset World Grid</button>
+      <button class="ev3-companion-btn" id="ev3-companion-btn"> Go To EV3 Companion</button>
+      <button id="toggle-theme-btn">Toggle Theme</button>
+
+    </div>
+  </header>
+
+  <div class="instructions">
+    Click on a cell and move mouse pointer to create obstacles until next click &nbsp; <span class="dot">&middot;</span> &nbsp; To change start or goal cell, click on the icon and click on the new cell
+  </div>
+
+  <main class="world-grid-container" id="world-grid-container"></main>
+
+</body>
+</html>

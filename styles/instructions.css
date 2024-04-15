@@ -1,0 +1,10 @@
+.instructions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--body-text-color);
+}
+
+.dot{
+  font-size: 2rem;
+}

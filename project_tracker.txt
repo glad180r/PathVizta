@@ -1,0 +1,5 @@
+[x] Create means to control / stop clicking on world grid
+[x] Implement maze generation features
+[] Create the incremental input steps for the D* Lite
+[] Implement D* Lite
+[] Start Developing EV3 Companion App and Research into MQTT and how I can apply it

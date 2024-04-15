@@ -1,0 +1,127 @@
+header {
+  background-color: var(--header-color);
+  color: var(--header-text-color);
+  height: var(--header-height);
+
+
+
+  display: flex;
+  align-items: center;
+
+
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.app-title {
+  font-size: 1.20rem;
+  font-weight: bold;
+  margin-right: 10.5%;
+}
+
+.control-inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#algo-selector,
+#obstacle-pattern-selector,
+#visualization-speed-selector,
+#maze-selector{
+  margin-right: 15px;
+}
+
+
+.control-inputs > select,
+.control-inputs > button{
+  height: var(--header-height);
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--header-text-color);
+  font-size: 0.90rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.control-inputs > select:hover{
+  color: var(--light-green);
+}
+
+
+.control-inputs > select > option{
+  color: black;
+}
+
+.control-inputs > button{
+  height: calc(var(--header-height) - 10px);
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+#visualize-btn{
+  background-color: var(--light-green);
+  width: 125px;
+}
+
+#reset-world-grid-btn {
+  background-color: var(--dark-red);
+  margin-right: 150px;
+  width: 150px;
+}
+
+#ev3-companion-btn{
+  background-color: var(--light-green);
+  width: 170px;
+}
+
+#compare-algos-btn {
+  background-color: var(--yellow);
+  width: 170px;
+}
+
+#toggle-theme-btn{
+  background-color: var(--body-color);
+  color: var(--body-text-color);
+  width: 120px;
+}
+
+#visualize-btn:active,
+#reset-world-grid-btn:active,
+#compare-algos-btn:active,
+#toggle-theme-btn:active,
+#ev3-companion-btn:active{
+  background-color: var(--dark-blue);
+}
+
+
+
+@media only screen and (max-width:1600px){
+  header{
+    width: 100vw;
+  }
+
+  .app-title {
+      margin-right: 2.5%;
+  }
+
+  #visualize-btn,
+  #reset-world-grid-btn,
+  #compare-algos-btn,
+  #toggle-theme-btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #reset-world-grid-btn{
+    margin-right: 10px;
+  }
+  
+
+  
+}

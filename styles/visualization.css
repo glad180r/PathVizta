@@ -1,0 +1,23 @@
+
+.animating-visited-cells{
+  /* background-color: var(--light-green); */
+  background-color: var(--visited-cell-color);
+  transition: all 0.1s ease-in-out 0.25s;
+  /*transition duration here will have to be faster(less time, sprinter) than time set in script*/
+}
+
+
+.animating-shortest-path{
+  /* background-color: var(--yellow); */
+  background-color: var(--shortest-path-color);
+  transition: all 0.1s ease-in-out 0.25s;
+  /*transition duration here will have to be faster(less time, sprinter) than time set in script*/
+}
+
+.animating-maze-obstacle{
+    background-color: var(--obstacle-color);
+    transition: all 0.1s ease-in-out 0.25s;
+}
+
+
+
