@@ -8,9 +8,9 @@ import  { generateMaze } from './maze/mazeGenerator.js'
 
 
 export const worldGridParameters = {
-  //do not exceed 20 rows and 54 columns
-  'rows': 22,
-  'columns': 54,
+  //do not exceed 20 rows and 50 columns
+  'rows': 20,
+  'columns': 50,
   'gridSquareSize': 30, //px
   'defaultStartCell': {'row': 10, 'column': 20},
   'defaultGoalCell': {'row': 10, 'column': 35},
@@ -24,7 +24,6 @@ export const worldGridParameters = {
 renderWorldGrid(worldGridParameters); // Initial rendering of world grid
 document.getElementById('reset-world-grid-btn').addEventListener('click', () => resetWorldGrid(worldGridParameters));
 
-document.getElementById('ev3-companion-btn').addEventListener('click', () => window.location.href = '../ev3-companion/ev3-companion.html') //switching to EV3 Companion
 
 document.getElementById('maze-selector').addEventListener('change', (event) => {
   let selectedMaze = event.target.value;
